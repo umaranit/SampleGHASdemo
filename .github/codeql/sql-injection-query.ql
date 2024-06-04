@@ -41,6 +41,6 @@ class PublicCallableParameter extends DataFlow::ParameterNode {
   }
 }
 
-from SqlInjectionConfiguration config, DataFlow::PathNode source, DataFlow::PathNode sink
+from SqlInjectionConfiguration config, DataFlow::Node source, DataFlow::Node sink
 where config.hasFlowPath(source, sink)
 select sink, source, sink, "SQL injection vulnerability due to user-provided input in method '$@'.", sink, sink.toString()
