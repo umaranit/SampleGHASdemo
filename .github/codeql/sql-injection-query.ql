@@ -14,12 +14,12 @@ import DataFlow::PathGraph
 class SqlInjectionConfiguration extends TaintTracking::Configuration {
   SqlInjectionConfiguration() { this = "SqlInjectionConfiguration" }
 
-  override predicate isSource(DataFlow::Node source) {
-    source instanceof PublicCallableParameter
+  override predicate isSource(DataFlow::PathNode source) {
+    source.getNode() instanceof PublicCallableParameter
   }
 
-  override predicate isSink(DataFlow::Node sink) {
-    sink instanceof ExecSqlCommand
+  override predicate isSink(DataFlow::PathNode sink) {
+    sink.getNode() instanceof ExecSqlCommand
   }
 }
 
