@@ -9,7 +9,7 @@ public class SqlUtility
     public void RunQuery(string userInput)
     {
         string query = "SELECT * FROM Users WHERE Name = '" + userInput + "'";
-      string pat-token="token: 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";
+      
         using (SqlConnection connection = new SqlConnection("<Your Connection String>"))
         {
             SqlCommand command = new SqlCommand(query, connection);
