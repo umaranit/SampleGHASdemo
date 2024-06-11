@@ -1,3 +1,2 @@
 # SampleGHASdemo#
 
-# GITHUB PAT TOKEN added ghp_n7GOr6QsCzZ5r3ylIiOQa3FP8L48Lr1qQo21
