@@ -9,7 +9,7 @@ public class SqlUtility
     public void RunQuery(string userInput)
     {
         string query = "SELECT * FROM Users WHERE Name = '" + userInput + "'";
-
+      string connectionStr="Server=tcp:your_server.database.windows.net,1433;Initial Catalog=dummydb;Persist Security Info=False;User ID=your_username;testuser=testpwd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
         using (SqlConnection connection = new SqlConnection("<Your Connection String>"))
         {
             SqlCommand command = new SqlCommand(query, connection);
