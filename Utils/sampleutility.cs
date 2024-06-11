@@ -7,6 +7,6 @@ public class SampleUtility
     {
         // Method logic here
       string aws_access_key_id = 'AKIAIOSFODNN7EXAMPLE';
-      string aws_secret_access_key = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+      string aws_secret_access_key = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY';
     }
 }
